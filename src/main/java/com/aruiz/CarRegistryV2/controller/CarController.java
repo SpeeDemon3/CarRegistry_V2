@@ -1,10 +1,12 @@
 package com.aruiz.CarRegistryV2.controller;
 
+import com.aruiz.CarRegistryV2.controller.dto.CarRequest;
+import com.aruiz.CarRegistryV2.controller.mapper.CarMapper;
 import com.aruiz.CarRegistryV2.service.impl.CarServiceImpl;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/car")
@@ -13,6 +15,19 @@ import org.springframework.web.bind.annotation.RestController;
 public class CarController {
 
     private final CarServiceImpl carService;
+    private final CarMapper mapper;
+
+    @PostMapping("/addCar")
+    public ResponseEntity<?> save(@RequestBody CarRequest request) {
+        try {
+            log.info("Car Save from controller.");
+            carService.save(request);
+            return ResponseEntity.ok().body(request);
+        } catch (Exception e) {
+            log.error("Error save form controller -> " + e);
+            return ResponseEntity.internalServerError().build();
+        }
+    }
     
 
 }
