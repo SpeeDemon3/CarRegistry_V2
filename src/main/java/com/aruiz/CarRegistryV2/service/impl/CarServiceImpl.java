@@ -10,6 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -53,11 +54,48 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public List<CarResponse> findAll() throws Exception {
-        return List.of();
+
+        List<CarEntity> list = repository.findAll();
+
+        if(!list.isEmpty()) {
+            List<CarResponse> responseList = new ArrayList<>();
+
+            for (CarEntity entity : list) {
+                responseList.add(converter.toCarResponse(entity));
+            }
+
+            return responseList;
+        }
+
+        return null;
     }
 
     @Override
     public CarResponse updateById(Long id, CarRequest request) throws Exception {
+
+        Optional<CarEntity> entityOptional = repository.findById(id);
+
+        if (entityOptional.isPresent()) {
+
+            CarEntity entity = entityOptional.get();
+
+            entity.setIdCar(id);
+            entity.setBrand(request.getBrand());
+            entity.setModel(request.getModel());
+            entity.setCarRegistration(request.getCarRegistration());
+            entity.setEngine(request.getEngine());
+            entity.setType(request.getType());
+            entity.setColor(request.getColor());
+            entity.setPower(request.getPower());
+            entity.setDisplacement(request.getDisplacement());
+            entity.setTransmission(request.getTransmission());
+            entity.setPassengerCapacity(request.getPassengerCapacity());
+
+            repository.save(entity);
+
+            return converter.toCarResponse(entity);
+        }
+
         return null;
     }
 
