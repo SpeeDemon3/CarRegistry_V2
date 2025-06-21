@@ -28,6 +28,45 @@ public class CarController {
             return ResponseEntity.internalServerError().build();
         }
     }
-    
+
+    @GetMapping("/getCar/{id}")
+    public ResponseEntity<?> getCarById(@PathVariable Long id) {
+        try {
+            return ResponseEntity.ok(carService.findById(id));
+        } catch (Exception e) {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+    @GetMapping("/findAll")
+    public ResponseEntity<?> getAllCars() {
+        try {
+            return ResponseEntity.ok(carService.findAll());
+        } catch (Exception e) {
+            log.error("Error in controller: " + e);
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+    @PutMapping("/updateById/{id}")
+    public ResponseEntity<?> updateById(@RequestBody CarRequest request, @PathVariable Long id) {
+        try {
+            log.info("Update car from Controller");
+            return ResponseEntity.ok(carService.updateById(id, request));
+        } catch (Exception e) {
+            log.error("Error from controller when car update by id");
+            return ResponseEntity.badRequest().build();
+        }
+    }
+
+    @DeleteMapping("/deleteById/{id}")
+    public ResponseEntity<?> deleteById(@PathVariable Long id) {
+        try {
+            return ResponseEntity.ok(carService.removeById(id));
+        } catch (Exception e) {
+            log.info("Car not found from controller");
+            return ResponseEntity.notFound().build();
+        }
+    }
 
 }
