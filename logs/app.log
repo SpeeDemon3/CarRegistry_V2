@@ -1,0 +1,92 @@
+2025-06-24T11:46:34.961+02:00  INFO 22451 --- [CarRegistryV2] [restartedMain] c.a.C.CarRegistryV2Application           : Starting CarRegistryV2Application using Java 22.0.1 with PID 22451 (/Users/antonioruizbenito/Documents/JAVA_REPASOS_PROYECTOS/carV2/car-registry/target/classes started by antonioruizbenito in /Users/antonioruizbenito/Documents/JAVA_REPASOS_PROYECTOS/carV2/car-registry)
+2025-06-24T11:46:34.963+02:00 DEBUG 22451 --- [CarRegistryV2] [restartedMain] c.a.C.CarRegistryV2Application           : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-24T11:46:34.963+02:00  INFO 22451 --- [CarRegistryV2] [restartedMain] c.a.C.CarRegistryV2Application           : No active profile set, falling back to 1 default profile: "default"
+2025-06-24T11:46:35.444+02:00  INFO 22451 --- [CarRegistryV2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-24T11:46:35.444+02:00  INFO 22451 --- [CarRegistryV2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-24T11:46:35.456+02:00  INFO 22451 --- [CarRegistryV2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-24T11:46:35.521+02:00  INFO 22451 --- [CarRegistryV2] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-24T11:46:35.542+02:00  INFO 22451 --- [CarRegistryV2] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-24T11:46:35.553+02:00  INFO 22451 --- [CarRegistryV2] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-24T11:46:35.671+02:00  INFO 22451 --- [CarRegistryV2] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-24T11:46:35.744+02:00  INFO 22451 --- [CarRegistryV2] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@298c34f
+2025-06-24T11:46:35.745+02:00  INFO 22451 --- [CarRegistryV2] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-24T11:46:35.764+02:00  WARN 22451 --- [CarRegistryV2] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-24T11:46:35.764+02:00  WARN 22451 --- [CarRegistryV2] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-24T11:46:35.770+02:00  INFO 22451 --- [CarRegistryV2] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-24T11:46:36.057+02:00  INFO 22451 --- [CarRegistryV2] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-24T11:46:36.332+02:00  WARN 22451 --- [CarRegistryV2] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-06-24T11:46:36.334+02:00  INFO 22451 --- [CarRegistryV2] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-24T11:46:36.336+02:00  INFO 22451 --- [CarRegistryV2] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-24T11:46:36.347+02:00 ERROR 22451 --- [CarRegistryV2] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-06-24T11:46:54.175+02:00  INFO 22531 --- [CarRegistryV2] [restartedMain] c.a.C.CarRegistryV2Application           : Starting CarRegistryV2Application using Java 22.0.1 with PID 22531 (/Users/antonioruizbenito/Documents/JAVA_REPASOS_PROYECTOS/carV2/car-registry/target/classes started by antonioruizbenito in /Users/antonioruizbenito/Documents/JAVA_REPASOS_PROYECTOS/carV2/car-registry)
+2025-06-24T11:46:54.176+02:00 DEBUG 22531 --- [CarRegistryV2] [restartedMain] c.a.C.CarRegistryV2Application           : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-24T11:46:54.176+02:00  INFO 22531 --- [CarRegistryV2] [restartedMain] c.a.C.CarRegistryV2Application           : No active profile set, falling back to 1 default profile: "default"
+2025-06-24T11:46:54.666+02:00  INFO 22531 --- [CarRegistryV2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-24T11:46:54.666+02:00  INFO 22531 --- [CarRegistryV2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-24T11:46:54.679+02:00  INFO 22531 --- [CarRegistryV2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-24T11:46:54.741+02:00  INFO 22531 --- [CarRegistryV2] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-24T11:46:54.761+02:00  INFO 22531 --- [CarRegistryV2] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-24T11:46:54.770+02:00  INFO 22531 --- [CarRegistryV2] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-24T11:46:54.867+02:00  INFO 22531 --- [CarRegistryV2] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-24T11:46:54.943+02:00  INFO 22531 --- [CarRegistryV2] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f7ef452
+2025-06-24T11:46:54.943+02:00  INFO 22531 --- [CarRegistryV2] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-24T11:46:54.961+02:00  WARN 22531 --- [CarRegistryV2] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-24T11:46:54.962+02:00  WARN 22531 --- [CarRegistryV2] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-24T11:46:54.967+02:00  INFO 22531 --- [CarRegistryV2] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-24T11:46:55.239+02:00  INFO 22531 --- [CarRegistryV2] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-24T11:46:55.545+02:00  INFO 22531 --- [CarRegistryV2] [restartedMain] c.a.C.CarRegistryV2Application           : Started CarRegistryV2Application in 1.59 seconds (process running for 1.802)
+2025-06-24T11:47:10.507+02:00  INFO 22531 --- [CarRegistryV2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-24T11:47:10.510+02:00  INFO 22531 --- [CarRegistryV2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-24T12:49:30.501+02:00  INFO 2195 --- [CarRegistryV2] [restartedMain] c.a.C.CarRegistryV2Application           : Starting CarRegistryV2Application using Java 22.0.1 with PID 2195 (/Users/antonioruizbenito/Documents/JAVA_REPASOS_PROYECTOS/carV2/car-registry/target/classes started by antonioruizbenito in /Users/antonioruizbenito/Documents/JAVA_REPASOS_PROYECTOS/carV2/car-registry)
+2025-06-24T12:49:30.502+02:00 DEBUG 2195 --- [CarRegistryV2] [restartedMain] c.a.C.CarRegistryV2Application           : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-24T12:49:30.502+02:00  INFO 2195 --- [CarRegistryV2] [restartedMain] c.a.C.CarRegistryV2Application           : No active profile set, falling back to 1 default profile: "default"
+2025-06-24T12:49:31.009+02:00  INFO 2195 --- [CarRegistryV2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-24T12:49:31.010+02:00  INFO 2195 --- [CarRegistryV2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-24T12:49:31.022+02:00  INFO 2195 --- [CarRegistryV2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-24T12:49:31.088+02:00  INFO 2195 --- [CarRegistryV2] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-24T12:49:31.115+02:00  INFO 2195 --- [CarRegistryV2] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-24T12:49:31.126+02:00  INFO 2195 --- [CarRegistryV2] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-24T12:49:31.245+02:00  INFO 2195 --- [CarRegistryV2] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-24T12:49:31.321+02:00  INFO 2195 --- [CarRegistryV2] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@348f4fc3
+2025-06-24T12:49:31.321+02:00  INFO 2195 --- [CarRegistryV2] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-24T12:49:31.339+02:00  WARN 2195 --- [CarRegistryV2] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-24T12:49:31.340+02:00  WARN 2195 --- [CarRegistryV2] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-24T12:49:31.346+02:00  INFO 2195 --- [CarRegistryV2] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-24T12:49:31.631+02:00  INFO 2195 --- [CarRegistryV2] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-24T12:49:31.948+02:00  INFO 2195 --- [CarRegistryV2] [restartedMain] c.a.C.CarRegistryV2Application           : Started CarRegistryV2Application in 1.68 seconds (process running for 1.968)
+2025-06-24T12:53:04.387+02:00  INFO 2195 --- [CarRegistryV2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-24T12:53:04.391+02:00  INFO 2195 --- [CarRegistryV2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
